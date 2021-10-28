@@ -12,29 +12,25 @@ class API {
     static let shared = API()
     private init() {}
     
-    func get(searchWord: String) {
+    func get(searchWord: String, success: (([GithubRepositoryModel]) -> Void)? = nil, error: ((Error) -> Void)? = nil) {
         guard searchWord.count > 0 else {
+            print("検索文字を入力してください。")
             return
         }
         guard let url = URL(string: "https://api.github.com/search/repositories?q=\(searchWord)&sort=stars&order=desc") else { return }
-        var request = URLRequest(url: url)
-//        request.httpMethod = "GET"
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("API通信でエラーが発生しました。\(error)")
+        let request = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: request) { data, response, err in
+            if let err = err {
+                error?(err)
                 return
             }
-            guard let data = data, let response = response else { return }
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                let items = try? JSONDecoder().decode(GithubRepositoryModel.self, from: json as! Data)
-                print(items)
-            } catch {
-                print("エラー")
+            guard let data = data,
+                  let githubModel = try? JSONDecoder().decode(GithubModel.self, from: data) else {
                 return
             }
-            print(response)
-            
+            let githubRepositoryItems = githubModel.items
+            success?(githubRepositoryItems)
+            return
         }
         task.resume()
     }
