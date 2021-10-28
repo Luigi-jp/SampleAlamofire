@@ -9,10 +9,20 @@
 /* Begin PBXBuildFile section */
 		2A4100DB272817840007981E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100DA272817840007981E /* AppDelegate.swift */; };
 		2A4100DD272817840007981E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100DC272817840007981E /* SceneDelegate.swift */; };
-		2A4100DF272817840007981E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100DE272817840007981E /* ViewController.swift */; };
-		2A4100E2272817840007981E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100E0272817840007981E /* Main.storyboard */; };
+		2A4100DF272817840007981E /* GithubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100DE272817840007981E /* GithubSearchViewController.swift */; };
+		2A4100E2272817840007981E /* GithubSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100E0272817840007981E /* GithubSearch.storyboard */; };
 		2A4100E4272817850007981E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100E3272817850007981E /* Assets.xcassets */; };
 		2A4100E7272817850007981E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100E5272817850007981E /* LaunchScreen.storyboard */; };
+		2A4100F027281F820007981E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100EF27281F820007981E /* API.swift */; };
+		2A4100F327281FAF0007981E /* GithubRepositotyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100F227281FAF0007981E /* GithubRepositotyModel.swift */; };
+		2A4100F627284D430007981E /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100F527284D430007981E /* Top.storyboard */; };
+		2A4100F827284EA70007981E /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100F727284EA70007981E /* TopViewController.swift */; };
+		2A4100FA27284FB50007981E /* NoLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100F927284FB50007981E /* NoLibrary.storyboard */; };
+		2A4100FC27284FCE0007981E /* NoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100FB27284FCE0007981E /* NoLibraryViewController.swift */; };
+		2A4100FF272854540007981E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4100FD272854540007981E /* TableViewCell.swift */; };
+		2A410100272854540007981E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4100FE272854540007981E /* TableViewCell.xib */; };
+		2A4101032728E05A0007981E /* GithubUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4101022728E05A0007981E /* GithubUserModel.swift */; };
+		2A410105272A5EF80007981E /* GithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A410104272A5EF80007981E /* GithubModel.swift */; };
 		CD679443A0ADB9EC1D178F24 /* Pods_SampleAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B04D779EBA0AA17BFCB749 /* Pods_SampleAlamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +30,21 @@
 		2A4100D7272817840007981E /* SampleAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4100DA272817840007981E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A4100DC272817840007981E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A4100DE272817840007981E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A4100E1272817840007981E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A4100DE272817840007981E /* GithubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchViewController.swift; sourceTree = "<group>"; };
+		2A4100E1272817840007981E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GithubSearch.storyboard; sourceTree = "<group>"; };
 		2A4100E3272817850007981E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A4100E6272817850007981E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A4100E8272817850007981E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4100EF27281F820007981E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2A4100F227281FAF0007981E /* GithubRepositotyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositotyModel.swift; sourceTree = "<group>"; };
+		2A4100F527284D430007981E /* Top.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		2A4100F727284EA70007981E /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		2A4100F927284FB50007981E /* NoLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoLibrary.storyboard; sourceTree = "<group>"; };
+		2A4100FB27284FCE0007981E /* NoLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLibraryViewController.swift; sourceTree = "<group>"; };
+		2A4100FD272854540007981E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2A4100FE272854540007981E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		2A4101022728E05A0007981E /* GithubUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserModel.swift; sourceTree = "<group>"; };
+		2A410104272A5EF80007981E /* GithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubModel.swift; sourceTree = "<group>"; };
 		8C95ADAA710AE0FD996E9062 /* Pods-SampleAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAlamofire.release.xcconfig"; path = "Target Support Files/Pods-SampleAlamofire/Pods-SampleAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 		A547131FFF5AA2C1F2BE5B90 /* Pods-SampleAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAlamofire.debug.xcconfig"; path = "Target Support Files/Pods-SampleAlamofire/Pods-SampleAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B04D779EBA0AA17BFCB749 /* Pods_SampleAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +85,10 @@
 			children = (
 				2A4100DA272817840007981E /* AppDelegate.swift */,
 				2A4100DC272817840007981E /* SceneDelegate.swift */,
+				2A4100F127281F890007981E /* API */,
 				2A4100EE272818240007981E /* Controller */,
+				2A4100F427281FB30007981E /* Model */,
+				2A410101272854570007981E /* View */,
 				2A4100E3272817850007981E /* Assets.xcassets */,
 				2A4100E5272817850007981E /* LaunchScreen.storyboard */,
 				2A4100E8272817850007981E /* Info.plist */,
@@ -76,10 +99,41 @@
 		2A4100EE272818240007981E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2A4100DE272817840007981E /* ViewController.swift */,
-				2A4100E0272817840007981E /* Main.storyboard */,
+				2A4100DE272817840007981E /* GithubSearchViewController.swift */,
+				2A4100E0272817840007981E /* GithubSearch.storyboard */,
+				2A4100F527284D430007981E /* Top.storyboard */,
+				2A4100F727284EA70007981E /* TopViewController.swift */,
+				2A4100F927284FB50007981E /* NoLibrary.storyboard */,
+				2A4100FB27284FCE0007981E /* NoLibraryViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A4100F127281F890007981E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2A4100EF27281F820007981E /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2A4100F427281FB30007981E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A4100F227281FAF0007981E /* GithubRepositotyModel.swift */,
+				2A4101022728E05A0007981E /* GithubUserModel.swift */,
+				2A410104272A5EF80007981E /* GithubModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A410101272854570007981E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A4100FD272854540007981E /* TableViewCell.swift */,
+				2A4100FE272854540007981E /* TableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3208F5CAF6B2122E0973607D /* Pods */ = {
@@ -159,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4100F627284D430007981E /* Top.storyboard in Resources */,
 				2A4100E7272817850007981E /* LaunchScreen.storyboard in Resources */,
+				2A410100272854540007981E /* TableViewCell.xib in Resources */,
 				2A4100E4272817850007981E /* Assets.xcassets in Resources */,
-				2A4100E2272817840007981E /* Main.storyboard in Resources */,
+				2A4100E2272817840007981E /* GithubSearch.storyboard in Resources */,
+				2A4100FA27284FB50007981E /* NoLibrary.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A4100DF272817840007981E /* ViewController.swift in Sources */,
+				2A4100F827284EA70007981E /* TopViewController.swift in Sources */,
+				2A4100F327281FAF0007981E /* GithubRepositotyModel.swift in Sources */,
+				2A4100FC27284FCE0007981E /* NoLibraryViewController.swift in Sources */,
+				2A4101032728E05A0007981E /* GithubUserModel.swift in Sources */,
+				2A4100DF272817840007981E /* GithubSearchViewController.swift in Sources */,
+				2A4100FF272854540007981E /* TableViewCell.swift in Sources */,
+				2A410105272A5EF80007981E /* GithubModel.swift in Sources */,
 				2A4100DB272817840007981E /* AppDelegate.swift in Sources */,
+				2A4100F027281F820007981E /* API.swift in Sources */,
 				2A4100DD272817840007981E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,12 +287,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A4100E0272817840007981E /* Main.storyboard */ = {
+		2A4100E0272817840007981E /* GithubSearch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2A4100E1272817840007981E /* Base */,
 			);
-			name = Main.storyboard;
+			name = GithubSearch.storyboard;
 			sourceTree = "<group>";
 		};
 		2A4100E5272817850007981E /* LaunchScreen.storyboard */ = {
@@ -371,7 +435,7 @@
 				INFOPLIST_FILE = SampleAlamofire/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Top;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,7 +464,7 @@
 				INFOPLIST_FILE = SampleAlamofire/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Top;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
